@@ -7,8 +7,8 @@ CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်မျာ�
 
 | | File |
 |---|---|
-| Windows | [K_Factory_Setup_V14.0.0.exe](https://github.com/pwai4066-code/k-factory-download-/releases/download/v14.0.0/K_Factory_Setup_V14.0.0.exe) |
-| Android | [K_Factory_V14.0.0.apk](https://github.com/pwai4066-code/k-factory-download-/releases/download/v14.0.0/K_Factory_V14.0.0.apk) |
+| Windows | [K_Factory_Setup_V14.0.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V14.0.0/K_Factory_Setup_V14.0.0.exe) |
+| Android | [K_Factory_V14.0.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V14.0.0/K_Factory_V14.0.0.apk) |
 
 **Windows:** double-click the setup file. Your old data stays – the setup only replaces the program.
 **Android:** open the .apk and allow install. It updates the app; your data stays.
