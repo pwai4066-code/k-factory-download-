@@ -1,0 +1,2 @@
+7a2bf63de071ff652e654ca1c01e5014ef1b377837f61b64c9bce5acbd978f22  K_Factory_Setup_V14.0.2.exe
+5847fc157d480dc077bdf76b9a070da587a4de43955a3f1c58d4d5d5200cc0cb  K_Factory_V14.0.2.apk
