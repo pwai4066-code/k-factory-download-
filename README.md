@@ -3,7 +3,7 @@
 Stock, order and production system for small and medium CNC factory companies.
 CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်များအတွက် Stock · Order · ထုတ်လုပ်မှု စနစ်။
 
-## Latest version: V14.3.0 (02.11.2026)
+## Latest version: V14.3.0 (03.11.2026)
 
 | | File |
 |---|---|
