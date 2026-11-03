@@ -3,12 +3,12 @@
 Stock, order and production system for small and medium CNC factory companies.
 CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်များအတွက် Stock · Order · ထုတ်လုပ်မှု စနစ်။
 
-## Latest version: V15.0.0 (03.11.2026)
+## Latest version: V15.1.0 (03.11.2026)
 
 | | File |
 |---|---|
-| Windows | [K_Factory_Setup_V15.0.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V15.0.0/K_Factory_Setup_V15.0.0.exe) |
-| Android | [K_Factory_V15.0.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V15.0.0/K_Factory_V15.0.0.apk) |
+| Windows | [K_Factory_Setup_V15.1.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V15.1.0/K_Factory_Setup_V15.1.0.exe) |
+| Android | [K_Factory_V15.1.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V15.1.0/K_Factory_V15.1.0.apk) |
 
 **Windows:** double-click the setup file. Your old data stays – the setup only replaces the program.
 **Android:** open the .apk and allow install. It updates the app; your data stays.
