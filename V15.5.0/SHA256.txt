@@ -1,0 +1,2 @@
+03d41777bbbc380d6ef5f07d421e69acb3082897e3fe6d504b5d4fe7c3156976  K_Factory_Setup_V15.5.0.exe
+6eef04db0a8a6a58cc1241a0b3aa0fe08d5bc547f9a63b647556ba0e7a248e45  K_Factory_V15.5.0.apk
