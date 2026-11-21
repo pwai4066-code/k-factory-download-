@@ -75,30 +75,13 @@ D.l.forEach(function(r,i){ // [token, drawing, qty, F|R, extra, price, date, loc
   r.chk=chk;[x,prm,pse,d,lk].forEach(function(e){e.addEventListener('input',chk);e.addEventListener('change',chk);});chk();
 });
 function send(o){var s=JSON.stringify(o);if(TG&&TG.sendData)TG.sendData(s);else window.__sent=s;}
-var AC=null;
-function coins(){ // casino slot machine: win jingle + coin hopper payout (ching-ching-ching) + coins piling in the tray
-  try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();if(AC.state==='suspended')AC.resume();}catch(e){return 0;}
-  var t0=AC.currentTime+0.03,M=AC.createGain();M.gain.value=0.5;M.connect(AC.destination);
-  var comp=AC.createDynamicsCompressor();comp.connect(M);
-  function tone(t,f,dur,v,type){var o=AC.createOscillator(),g=AC.createGain();o.type=type||'square';o.frequency.value=f;
-    g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(v,t+0.005);g.gain.exponentialRampToValueAtTime(0.0001,t+dur);
-    var lp=AC.createBiquadFilter();lp.type='lowpass';lp.frequency.value=5000;o.connect(lp);lp.connect(g);g.connect(comp);o.start(t);o.stop(t+dur+0.02);}
-  function bell(t,f,v){[1,2,3.01,4.2].forEach(function(r,i){if(f*r<15000)tone(t,f*r,0.5/(1+i*0.6),v/(1+i*1.5),'sine');});}
-  function clink(t,f,v){[1,2.76,5.40].forEach(function(r,i){if(f*r>15000)return;var o=AC.createOscillator(),g=AC.createGain();o.type='sine';o.frequency.value=f*r;
-    var dc=0.06+0.22/(1+i);g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(v/(1+i*1.2),t+0.002);g.gain.exponentialRampToValueAtTime(0.0001,t+dc);
-    o.connect(g);g.connect(comp);o.start(t);o.stop(t+dc+0.02);});
-    var n=AC.createBufferSource(),bf=AC.createBuffer(1,Math.floor(AC.sampleRate*0.015),AC.sampleRate),dd=bf.getChannelData(0);for(var i=0;i<dd.length;i++)dd[i]=(Math.random()*2-1)*(1-i/dd.length);
-    n.buffer=bf;var hp=AC.createBiquadFilter();hp.type='highpass';hp.frequency.value=2500;var ng=AC.createGain();ng.gain.value=v*0.7;n.connect(hp);hp.connect(ng);ng.connect(comp);n.start(t);}
-  // 1) the WIN jingle: fast rising arpeggio + bell
-  var arp=[523,659,784,1047,1319,1568,2093];arp.forEach(function(f,i){tone(t0+i*0.055,f,0.12,0.18,'square');});
-  bell(t0+0.40,2093,0.35);bell(t0+0.40,2637,0.25);
-  // 2) the hopper pays out: steady ching-ching (about 14 coins a second), each coin a little different
-  var start=t0+0.55,n=28;for(var k=0;k<n;k++){var t=start+k*0.07+Math.random()*0.012;clink(t,2300+Math.random()*900,0.32+Math.random()*0.12);
-    if(Math.random()<0.6)clink(t+0.03+Math.random()*0.02,1500+Math.random()*700,0.12);}            // coin hits the pile
-  // 3) coins settle + a last ding
-  var end=start+n*0.07;for(var k2=0;k2<10;k2++)clink(end+Math.random()*0.5,1300+Math.random()*1200,0.06+Math.random()*0.06);
-  bell(end+0.15,1568,0.3);bell(end+0.30,2093,0.35);
-  return Math.round((end-t0+0.9)*1000);
+// 21.11.2026: the save sound is a REAL recording mix (coins from a slot machine hopper falling into the metal tray),
+// made from CC0 recordings by Kenney (www.kenney.nl) - coin-payout.mp3 next to this page.
+var PAY=null;try{PAY=new Audio('coin-payout.mp3');PAY.preload='auto';PAY.load();}catch(e){PAY=null;}
+function coins(){
+  if(!PAY)return 0;
+  try{PAY.currentTime=0;var p=PAY.play();if(p&&p.catch)p.catch(function(){});}catch(e){return 0;}
+  return 3400;
 }
 
 save.onclick=function(){var ok=true;D.l.forEach(function(r){if(!r.chk())ok=false;});
