@@ -75,13 +75,12 @@ D.l.forEach(function(r,i){ // [token, drawing, qty, F|R, extra, price, date, loc
   r.chk=chk;[x,prm,pse,d,lk].forEach(function(e){e.addEventListener('input',chk);e.addEventListener('change',chk);});chk();
 });
 function send(o){var s=JSON.stringify(o);if(TG&&TG.sendData)TG.sendData(s);else window.__sent=s;}
-// 21.11.2026: the save sound is a REAL recording mix (coins from a slot machine hopper falling into the metal tray),
-// made from CC0 recordings by Kenney (www.kenney.nl) - coin-payout.mp3 next to this page.
+// 21.11.2026: the save sound = coin-payout.mp3 next to this page (the Boss's own free sound, cleaned: noise out, EQ, 192 kbps).
 var PAY=null;try{PAY=new Audio('coin-payout.mp3');PAY.preload='auto';PAY.load();}catch(e){PAY=null;}
 function coins(){
   if(!PAY)return 0;
   try{PAY.currentTime=0;var p=PAY.play();if(p&&p.catch)p.catch(function(){});}catch(e){return 0;}
-  return 3400;
+  return 6200;
 }
 
 save.onclick=function(){var ok=true;D.l.forEach(function(r){if(!r.chk())ok=false;});
