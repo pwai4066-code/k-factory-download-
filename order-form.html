@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="my"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Order Form</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+:root{--bg:#fff;--fg:#0f172a;--mut:#64748b;--line:#e2e8f0;--box:#f8fafc;--acc:#2481cc;--ok:#16a34a;--need:#f59e0b;--needbg:#fffbeb}
+@media (prefers-color-scheme:dark){:root{--bg:#17212b;--fg:#f1f5f9;--mut:#94a3b8;--line:#2b3a4a;--box:#0f1a24;--needbg:#3a2e12}}
+*{box-sizing:border-box}body{margin:0;background:var(--tg-theme-bg-color,var(--bg));color:var(--tg-theme-text-color,var(--fg));font:15px/1.45 "Noto Sans Myanmar","Noto Sans",system-ui,sans-serif;padding:12px 12px 90px}
+h1{font-size:16px;margin:0 0 2px}.sub{color:var(--tg-theme-hint-color,var(--mut));font-size:13px;margin-bottom:10px}
+.card{border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:10px}
+.card h2{font-size:14.5px;margin:0 0 8px}.tag{font-size:11px;border-radius:10px;padding:1px 7px;margin-left:4px;background:#dcfce7;color:#166534}.tag.f{background:#fef3c7;color:#92400e}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+label{display:block;font-size:12px;color:var(--tg-theme-hint-color,var(--mut));margin-bottom:2px}
+input,select{width:100%;font:inherit;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--box);color:inherit}
+.need{border:2px solid var(--need);background:var(--needbg)}
+.err{color:#dc2626;font-size:12px;min-height:0}
+.mic{border:2px dashed var(--acc);color:var(--acc);border-radius:12px;padding:10px;text-align:center;font-weight:700;background:none;width:100%;font:inherit;font-weight:700;margin:4px 0 10px}
+#save{position:fixed;left:12px;right:12px;bottom:12px;padding:14px;border:0;border-radius:12px;background:var(--ok);color:#fff;font:inherit;font-weight:700;font-size:16px}
+.note{font-size:12px;color:var(--tg-theme-hint-color,var(--mut))}
+</style></head><body>
+<h1 id="t"></h1><div class="sub" id="s"></div>
+<div id="list"></div>
+<button class="mic" id="mic"></button>
+<p class="note" id="n"></p>
+<button id="save"></button>
+<script>
+(function(){
+var TG=window.Telegram&&Telegram.WebApp; if(TG){TG.ready();TG.expand();}
+function dec(s){s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';return decodeURIComponent(escape(atob(s)));}
+var D={l:[]};try{D=JSON.parse(dec(new URLSearchParams(location.search).get('d')||''));}catch(e){}
+var MY=D.lang!=='en';
+var L=MY?{x:'အပို အရေအတွက်',p:'ဈေး (RM)',d:'ပို့ရက် (DD.MM.YYYY)',lk:'Locker',pcs:' ခု',ch:'ရွေးပါ',need:'ဖြည့်ရန်',
+ save:function(n){return '✅ Drawing '+n+' ခုလုံး သိမ်း';},mic:'🎤 အသံနဲ့ ပြောမယ် (ဖောင်ပိတ်ပြီး အသံပို့ပါ)',
+ note:'သိပြီးသား တန်ဖိုးတွေ ကြိုဖြည့်ထားပါတယ်။ အဝါကွက် = ဖြည့်ရန်လို။ သိမ်းခါနီး PO ထပ်မထပ် ထပ်စစ်ပါတယ်။',
+ eP:'ဈေး ထည့်ပါ',eD:'ရက်စွဲ DD.MM.YYYY ပုံစံ',eL:'အပိုရှိရင် Locker ရွေးပါ',bad:'ဖောင် ဖတ်မရပါ - Telegram ထဲက ခလုတ်ကို ပြန်နှိပ်ပါ။'}
+:{x:'Extra pieces',p:'Price (RM)',d:'Delivery (DD.MM.YYYY)',lk:'Locker',pcs:' pcs',ch:'Choose',need:'needed',
+ save:function(n){return '✅ Save all '+n+' drawing(s)';},mic:'🎤 Say it instead (closes the form)',
+ note:'Known values are filled in. Yellow = needed. The PO is checked for duplicates again when saving.',
+ eP:'Enter the price',eD:'Date as DD.MM.YYYY',eL:'Choose a locker for the extra pieces',bad:'Cannot read the form - press the button in Telegram again.'};
+document.getElementById('t').textContent=(D.c||'')+(D.po?' · PO '+D.po:'');
+document.getElementById('s').textContent='Drawing '+D.l.length+(MY?' ခု':'');
+document.getElementById('mic').textContent=L.mic;document.getElementById('n').textContent=L.note;
+var save=document.getElementById('save');save.textContent=L.save(D.l.length);
+if(!D.g||!D.l.length){document.getElementById('list').textContent=L.bad;save.style.display='none';document.getElementById('mic').style.display='none';return;}
+var list=document.getElementById('list');
+function el(t,a,c){var e=document.createElement(t);for(var k in a)e.setAttribute(k,a[k]);if(c!=null)e.textContent=c;return e;}
+function field(lbl,inp){var d=el('div');d.appendChild(el('label',{},lbl));d.appendChild(inp);return d;}
+D.l.forEach(function(r,i){ // [token, drawing, qty, F|R, extra, price, date, locker]
+  var c=el('div',{'class':'card'});var h=el('h2',{},(i+1)+'. '+r[1]+' · '+r[2]+L.pcs);
+  h.appendChild(el('span',{'class':'tag'+(r[3]==='F'?' f':'')},r[3]==='F'?'First':'Repeat'));c.appendChild(h);
+  var g=el('div',{'class':'g'});
+  var x=el('input',{type:'number',inputmode:'numeric',min:'0',step:'1',value:r[4]||0});
+  var p=el('input',{type:'number',inputmode:'decimal',min:'0',step:'0.01',value:r[5]||'',placeholder:L.need});
+  var d=el('input',{type:'text',inputmode:'numeric',value:r[6]||'',placeholder:'05.12.2026',maxlength:'10'});
+  var lk=el('select');['','Locker A','Locker B','Locker C'].forEach(function(v){var o=el('option',{value:v},v||'— '+L.ch);if(v===r[7])o.selected=true;lk.appendChild(o);});
+  g.appendChild(field(L.x,x));g.appendChild(field(L.p,p));g.appendChild(field(L.d,d));g.appendChild(field(L.lk,lk));c.appendChild(g);
+  var er=el('div',{'class':'err'});c.appendChild(er);list.appendChild(c);
+  r.ui={x:x,p:p,d:d,lk:lk,er:er};
+  function chk(){var e=[];var pn=Number(p.value);p.classList.toggle('need',!(pn>0));if(!(pn>0))e.push(L.eP);
+    var okD=!d.value||/^\d{1,2}\.\d{1,2}\.\d{4}$/.test(d.value.trim());d.classList.toggle('need',!okD);if(!okD)e.push(L.eD);
+    var nl=r[3]==='F'&&Number(x.value)>0&&!lk.value;lk.classList.toggle('need',nl);if(nl)e.push(L.eL);
+    er.textContent=e.join(' · ');return !e.length;}
+  r.chk=chk;[x,p,d,lk].forEach(function(e){e.addEventListener('input',chk);e.addEventListener('change',chk);});chk();
+});
+function send(o){var s=JSON.stringify(o);if(TG&&TG.sendData)TG.sendData(s);else alert(s);}
+save.onclick=function(){var ok=true;D.l.forEach(function(r){if(!r.chk())ok=false;});
+  if(!ok){var f=document.querySelector('.need');if(f)f.scrollIntoView({behavior:'smooth',block:'center'});if(TG&&TG.HapticFeedback)TG.HapticFeedback.notificationOccurred('error');return;}
+  send({g:D.g,l:D.l.map(function(r){var u=r.ui;return [r[0],Math.max(0,Math.round(Number(u.x.value)||0)),Number(u.p.value)||0,u.d.value.trim(),u.lk.value];})});};
+document.getElementById('mic').onclick=function(){send({g:D.g,voice:1});};
+})();
+</script></body></html>
