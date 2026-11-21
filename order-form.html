@@ -6,23 +6,23 @@
 <style>
 :root{--bg:#fff;--fg:#0f172a;--mut:#64748b;--line:#e2e8f0;--box:#f8fafc;--acc:#2481cc;--ok:#16a34a;--need:#f59e0b;--needbg:#fffbeb}
 @media (prefers-color-scheme:dark){:root{--bg:#17212b;--fg:#f1f5f9;--mut:#94a3b8;--line:#2b3a4a;--box:#0f1a24;--needbg:#3a2e12}}
-*{box-sizing:border-box}body{margin:0;background:var(--tg-theme-bg-color,var(--bg));color:var(--tg-theme-text-color,var(--fg));font:15px/1.45 "Noto Sans Myanmar","Noto Sans",system-ui,sans-serif;padding:12px 12px 90px}
+*{box-sizing:border-box}body{margin:0;background:var(--tg-theme-bg-color,var(--bg));color:var(--tg-theme-text-color,var(--fg));font:15px/1.45 "Noto Sans Myanmar","Noto Sans",system-ui,sans-serif;padding:12px 12px 24px}
 h1{font-size:16px;margin:0 0 2px}.sub{color:var(--tg-theme-hint-color,var(--mut));font-size:13px;margin-bottom:10px}
 .card{border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:10px}
 .card h2{font-size:14.5px;margin:0 0 8px}.tag{font-size:11px;border-radius:10px;padding:1px 7px;margin-left:4px;background:#dcfce7;color:#166534}.tag.f{background:#fef3c7;color:#92400e}
-.g{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:8px}.pr{display:grid;grid-template-columns:3fr 2fr;gap:4px}
 label{display:block;font-size:12px;color:var(--tg-theme-hint-color,var(--mut));margin-bottom:2px}
 input,select{width:100%;font:inherit;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--box);color:inherit}
 .need{border:2px solid var(--need);background:var(--needbg)}
 .err{color:#dc2626;font-size:12px;min-height:0}
 .mic{border:2px dashed var(--acc);color:var(--acc);border-radius:12px;padding:10px;text-align:center;font-weight:700;background:none;width:100%;font:inherit;font-weight:700;margin:4px 0 10px}
-#save{position:fixed;left:12px;right:12px;bottom:12px;padding:14px;border:0;border-radius:12px;background:var(--ok);color:#fff;font:inherit;font-weight:700;font-size:16px}
+#save{position:sticky;bottom:10px;width:100%;margin-top:6px;padding:14px;border:0;border-radius:12px;background:var(--ok);color:#fff;font:inherit;font-weight:700;font-size:16px}
 .note{font-size:12px;color:var(--tg-theme-hint-color,var(--mut))}
 </style></head><body>
 <h1 id="t"></h1><div class="sub" id="s"></div>
+<p class="note" id="n"></p>
 <div id="list"></div>
 <button class="mic" id="mic"></button>
-<p class="note" id="n"></p>
 <button id="save"></button>
 <script>
 (function(){
@@ -30,14 +30,14 @@ var TG=window.Telegram&&Telegram.WebApp; if(TG){TG.ready();TG.expand();}
 function dec(s){s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';return decodeURIComponent(escape(atob(s)));}
 var D={l:[]};try{D=JSON.parse(dec(new URLSearchParams(location.search).get('d')||''));}catch(e){}
 var MY=D.lang!=='en';
-var L=MY?{x:'အပို အရေအတွက်',p:'ဈေး (RM)',d:'ပို့ရက် (DD.MM.YYYY)',lk:'Locker',pcs:' ခု',ch:'ရွေးပါ',need:'ဖြည့်ရန်',
+var L=MY?{x:'အပို အရေအတွက်',p:'ဈေး (RM)',d:'ပို့ရက်',lk:'Locker',pcs:' ခု',ch:'ရွေးပါ',need:'ဖြည့်ရန်',
  save:function(n){return '✅ Drawing '+n+' ခုလုံး သိမ်း';},mic:'🎤 အသံနဲ့ ပြောမယ် (ဖောင်ပိတ်ပြီး အသံပို့ပါ)',
  note:'သိပြီးသား တန်ဖိုးတွေ ကြိုဖြည့်ထားပါတယ်။ အဝါကွက် = ဖြည့်ရန်လို။ သိမ်းခါနီး PO ထပ်မထပ် ထပ်စစ်ပါတယ်။',
- eP:'ဈေး ထည့်ပါ',eD:'ရက်စွဲ DD.MM.YYYY ပုံစံ',eL:'အပိုရှိရင် Locker ရွေးပါ',bad:'ဖောင် ဖတ်မရပါ - Telegram ထဲက ခလုတ်ကို ပြန်နှိပ်ပါ။'}
-:{x:'Extra pieces',p:'Price (RM)',d:'Delivery (DD.MM.YYYY)',lk:'Locker',pcs:' pcs',ch:'Choose',need:'needed',
+ eP:'ဈေး ရွေးပါ',eD:'ပို့ရက် ရွေးပါ',eL:'အပိုရှိရင် Locker ရွေးပါ',bad:'ဖောင် ဖတ်မရပါ - Telegram ထဲက ခလုတ်ကို ပြန်နှိပ်ပါ။'}
+:{x:'Extra pieces',p:'Price (RM)',d:'Delivery date',lk:'Locker',pcs:' pcs',ch:'Choose',need:'needed',
  save:function(n){return '✅ Save all '+n+' drawing(s)';},mic:'🎤 Say it instead (closes the form)',
  note:'Known values are filled in. Yellow = needed. The PO is checked for duplicates again when saving.',
- eP:'Enter the price',eD:'Date as DD.MM.YYYY',eL:'Choose a locker for the extra pieces',bad:'Cannot read the form - press the button in Telegram again.'};
+ eP:'Choose the price',eD:'Choose the delivery date',eL:'Choose a locker for the extra pieces',bad:'Cannot read the form - press the button in Telegram again.'};
 document.getElementById('t').textContent=(D.c||'')+(D.po?' · PO '+D.po:'');
 document.getElementById('s').textContent='Drawing '+D.l.length+(MY?' ခု':'');
 document.getElementById('mic').textContent=L.mic;document.getElementById('n').textContent=L.note;
@@ -50,23 +50,48 @@ D.l.forEach(function(r,i){ // [token, drawing, qty, F|R, extra, price, date, loc
   var c=el('div',{'class':'card'});var h=el('h2',{},(i+1)+'. '+r[1]+' · '+r[2]+L.pcs);
   h.appendChild(el('span',{'class':'tag'+(r[3]==='F'?' f':'')},r[3]==='F'?'First':'Repeat'));c.appendChild(h);
   var g=el('div',{'class':'g'});
-  var x=el('input',{type:'number',inputmode:'numeric',min:'0',step:'1',value:r[4]||0});
-  var p=el('input',{type:'number',inputmode:'decimal',min:'0',step:'0.01',value:r[5]||'',placeholder:L.need});
-  var d=el('input',{type:'text',inputmode:'numeric',value:r[6]||'',placeholder:'05.12.2026',maxlength:'10'});
+  var x=el('select');var xs=[0,1,2,3,4,5,6,7,8,9,10,12,15,20,25,30,40,50,60,80,100,150,200];
+  var p5=Math.ceil(r[2]*0.05),p10=Math.ceil(r[2]*0.10),cur=Number(r[4])||0;
+  [[p5,'+5%'],[p10,'+10%']].forEach(function(a){if(xs.indexOf(a[0])<0)xs.push(a[0]);});if(xs.indexOf(cur)<0)xs.push(cur);xs.sort(function(a,b){return a-b;});
+  xs.forEach(function(v){var t=String(v)+(v===p5&&v>0?'  (+5%)':'')+(v===p10&&v>0&&v!==p5?'  (+10%)':'');var o=el('option',{value:v},t);if(v===cur)o.selected=true;x.appendChild(o);});
+  var pv=Number(r[5])||0,rmv=Math.floor(pv+1e-9),sv=Math.round((pv-rmv)*100);
+  var prm=el('select');prm.appendChild(el('option',{value:''},'RM ?'));for(var k=0;k<=Math.max(500,rmv);k++){var o=el('option',{value:k},'RM '+k);if(pv>0&&k===rmv)o.selected=true;prm.appendChild(o);}
+  var pse=el('select');var ss=[];for(var cc=0;cc<100;cc+=5)ss.push(cc);if(ss.indexOf(sv)<0){ss.push(sv);ss.sort(function(a,b){return a-b;});}
+  ss.forEach(function(cv){var o=el("option",{value:cv},"."+("0"+cv).slice(-2));if(cv===sv)o.selected=true;pse.appendChild(o);});
+  var p=el('div',{'class':'pr'});p.appendChild(prm);p.appendChild(pse);
+  var d=el('select');var DN=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];function f2(n){return ('0'+n).slice(-2);}
+  var t0=new Date();t0.setHours(0,0,0,0);var have=false;
+  if(!r[6])d.appendChild(el('option',{value:''},'— '+L.ch));
+  for(var i2=0;i2<=150;i2++){var t=new Date(t0.getTime()+i2*86400000);var v=f2(t.getDate())+'.'+f2(t.getMonth()+1)+'.'+t.getFullYear();var o=el('option',{value:v},v+' ('+DN[t.getDay()]+')');if(v===r[6]){o.selected=true;have=true;}d.appendChild(o);}
+  if(r[6]&&!have){var o2=el('option',{value:r[6]},r[6]);o2.selected=true;d.insertBefore(o2,d.firstChild);}
   var lk=el('select');['','Locker A','Locker B','Locker C'].forEach(function(v){var o=el('option',{value:v},v||'— '+L.ch);if(v===r[7])o.selected=true;lk.appendChild(o);});
   g.appendChild(field(L.x,x));g.appendChild(field(L.p,p));g.appendChild(field(L.d,d));g.appendChild(field(L.lk,lk));c.appendChild(g);
   var er=el('div',{'class':'err'});c.appendChild(er);list.appendChild(c);
-  r.ui={x:x,p:p,d:d,lk:lk,er:er};
-  function chk(){var e=[];var pn=Number(p.value);p.classList.toggle('need',!(pn>0));if(!(pn>0))e.push(L.eP);
-    var okD=!d.value||/^\d{1,2}\.\d{1,2}\.\d{4}$/.test(d.value.trim());d.classList.toggle('need',!okD);if(!okD)e.push(L.eD);
+  r.ui={x:x,prm:prm,pse:pse,d:d,lk:lk,er:er};
+  function chk(){var e=[];var pn=prm.value===''?0:Number(prm.value)+Number(pse.value)/100;prm.classList.toggle('need',!(pn>0));if(!(pn>0))e.push(L.eP);
+    var okD=!!d.value;d.classList.toggle('need',!okD);if(!okD)e.push(L.eD);
     var nl=r[3]==='F'&&Number(x.value)>0&&!lk.value;lk.classList.toggle('need',nl);if(nl)e.push(L.eL);
     er.textContent=e.join(' · ');return !e.length;}
-  r.chk=chk;[x,p,d,lk].forEach(function(e){e.addEventListener('input',chk);e.addEventListener('change',chk);});chk();
+  r.chk=chk;[x,prm,pse,d,lk].forEach(function(e){e.addEventListener('input',chk);e.addEventListener('change',chk);});chk();
 });
-function send(o){var s=JSON.stringify(o);if(TG&&TG.sendData)TG.sendData(s);else alert(s);}
+function send(o){var s=JSON.stringify(o);if(TG&&TG.sendData)TG.sendData(s);else window.__sent=s;}
+var AC=null;
+function coins(){ // jackpot: many coins pour out of the machine
+  try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();if(AC.state==='suspended')AC.resume();}catch(e){return 0;}
+  var now=AC.currentTime+0.03,dur=2.4,master=AC.createGain();master.gain.value=0.55;master.connect(AC.destination);
+  function clink(t,f,v){[1,2.76,5.40,8.93].forEach(function(r,i){if(f*r>15000)return;var o=AC.createOscillator(),g=AC.createGain();o.type='sine';o.frequency.value=f*r;
+    var a=v/(1+i*1.3),dc=0.07+0.25/(1+i);g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(a,t+0.003);g.gain.exponentialRampToValueAtTime(0.0001,t+dc);
+    o.connect(g);g.connect(master);o.start(t);o.stop(t+dc+0.02);});
+    var n=AC.createBufferSource(),b=AC.createBuffer(1,Math.floor(AC.sampleRate*0.02),AC.sampleRate),dd=b.getChannelData(0);for(var i=0;i<dd.length;i++)dd[i]=(Math.random()*2-1)*(1-i/dd.length);
+    n.buffer=b;var hp=AC.createBiquadFilter();hp.type='highpass';hp.frequency.value=3000;var ng=AC.createGain();ng.gain.value=v*0.6;n.connect(hp);hp.connect(ng);ng.connect(master);n.start(t);}
+  clink(now,1568,0.5);clink(now+0.12,2093,0.5); // ding-ding
+  for(var i=0;i<95;i++){var u=Math.random();var t=now+0.25+Math.pow(u,1.6)*dur;clink(t,1600+Math.random()*2200,0.08+Math.random()*0.18);}
+  return Math.round((dur+0.6)*1000);
+}
 save.onclick=function(){var ok=true;D.l.forEach(function(r){if(!r.chk())ok=false;});
   if(!ok){var f=document.querySelector('.need');if(f)f.scrollIntoView({behavior:'smooth',block:'center'});if(TG&&TG.HapticFeedback)TG.HapticFeedback.notificationOccurred('error');return;}
-  send({g:D.g,l:D.l.map(function(r){var u=r.ui;return [r[0],Math.max(0,Math.round(Number(u.x.value)||0)),Number(u.p.value)||0,u.d.value.trim(),u.lk.value];})});};
+  save.disabled=true;save.textContent=MY?'💰 သိမ်းနေပါတယ်…':'💰 Saving…';if(TG&&TG.HapticFeedback)TG.HapticFeedback.notificationOccurred('success');
+  var wait=coins();var out={g:D.g,l:D.l.map(function(r){var u=r.ui;return [r[0],Math.max(0,Math.round(Number(u.x.value)||0)),(u.prm.value===''?0:Math.round((Number(u.prm.value)+Number(u.pse.value)/100)*100)/100),u.d.value,u.lk.value];})};setTimeout(function(){send(out);},wait||200);};
 document.getElementById('mic').onclick=function(){send({g:D.g,voice:1});};
 })();
 </script></body></html>
