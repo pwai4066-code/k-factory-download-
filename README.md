@@ -3,12 +3,15 @@
 Stock, order and production system for small and medium CNC factory companies.
 CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်များအတွက် Stock · Order · ထုတ်လုပ်မှု စနစ်။
 
-## Latest version: V16.3.0 (22.11.2026)
+## Latest version: V16.4.0 (22.11.2026)
 
 | | File |
 |---|---|
-| Windows | [K_Factory_Setup_V16.3.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.3.0/K_Factory_Setup_V16.3.0.exe) |
-| Android | [K_Factory_V16.3.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.3.0/K_Factory_V16.3.0.apk) |
+| Windows | [K_Factory_Setup_V16.4.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.4.0/K_Factory_Setup_V16.4.0.exe) |
+| Android | [K_Factory_V16.4.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.4.0/K_Factory_V16.4.0.apk) |
+
+**New in V16.4.0:** one-week Delivery Schedule for everybody (no prices, late orders on top), the boss changes a delivery date at once – the accountant with his own password, AI Helper questions numbered by group, Settings → SMART – 80 features, readable Contact buttons in dark colours.
+**V16.4.0 အသစ်:** တစ်ပတ်စာ Delivery Schedule (လူတိုင်း မြင်၊ ဈေးမပြ၊ နောက်ကျတာ အပေါ်ဆုံး)၊ ပို့ရက် ပြောင်းခြင်း (သူဌေး ချက်ချင်း၊ Accountant ကိုယ့် Password နဲ့)၊ AI အကူ မေးခွန်း နံပါတ်+အုပ်စု၊ ဆက်တင် → SMART – အချက် ၈၀၊ ဆက်သွယ်ရန် ခလုတ် အရောင်ပြင်။
 
 **New in V16.3.0:** Messages – the boss speaks or writes "K0005 …" in Telegram, checks the text in the person's language and presses Send; the person gets it in his own Telegram (his language + the boss's voice) and answers with one tap (Understood · OK · Need help · Machine problem · Will be late) or by voice. Not connected or blocked: the boss is told at once and the message is kept in the app. Only the boss and that person see the talk.
 **V16.3.0 အသစ်:** စာများ – သူဌေးက Telegram မှာ "K0005 …" လို့ အသံ (သို့) စာနဲ့ ပြော၊ သူ့ဘာသာနဲ့ စစ်ပြီး ပို့၊ ဝန်ထမ်းက ကိုယ့် Telegram မှာ ကိုယ့်ဘာသာ + သူဌေးအသံနဲ့ ရပြီး ခလုတ်တစ်ချက် (နားလည်ပါပြီ · OK · အကူအညီလို · စက်ပြဿနာ · နောက်ကျမယ်) (သို့) အသံနဲ့ ပြန်ဖြေ။ မချိတ်ရသေး / Block ထားရင် သူဌေးကို ချက်ချင်းပြော၊ App ထဲ သိမ်းထား။ သူဌေးနဲ့ အဲဒီလူပဲ မြင်ရ။
