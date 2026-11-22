@@ -3,12 +3,15 @@
 Stock, order and production system for small and medium CNC factory companies.
 CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်များအတွက် Stock · Order · ထုတ်လုပ်မှု စနစ်။
 
-## Latest version: V16.4.0 (22.11.2026)
+## Latest version: V16.5.0 (22.11.2026)
 
 | | File |
 |---|---|
-| Windows | [K_Factory_Setup_V16.4.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.4.0/K_Factory_Setup_V16.4.0.exe) |
-| Android | [K_Factory_V16.4.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.4.0/K_Factory_V16.4.0.apk) |
+| Windows | [K_Factory_Setup_V16.5.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.5.0/K_Factory_Setup_V16.5.0.exe) |
+| Android | [K_Factory_V16.5.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.5.0/K_Factory_V16.5.0.apk) |
+
+**New in V16.5.0:** Attendance → QR: "📱 Can phones reach K Factory?" (boss only) – 5 checks with ✅ / ❌, the reason and the fix (open to the factory Wi-Fi, the computer's address, Windows firewall, Private / Public Wi-Fi, a real phone) and "Test with a phone". The Windows setup asks "Yes / No" once to let phones in (port 8012, factory Wi-Fi only). "Open to the factory Wi-Fi" restarts K Factory by itself. When the computer's address changes, the QR follows by itself and the boss is told in the app and in Telegram.
+**V16.5.0 အသစ်:** Attendance → QR: "📱 ဖုန်းက K Factory ကို ချိတ်လို့ရလား" (သူဌေးသာ) – ✅ / ❌ ၅ ချက်၊ အကြောင်းရင်းနဲ့ ပြင်နည်း (စက်ရုံ Wi-Fi ဖွင့်ထား၊ ကွန်ပျူတာ လိပ်စာ၊ Windows Firewall၊ Private / Public Wi-Fi၊ ဖုန်းအစစ်) နဲ့ "ဖုန်းနဲ့ စမ်းမည်"။ Windows Setup က ဖုန်းဝင်ခွင့်အတွက် "Yes / No" တစ်ခါ မေး (Port 8012၊ စက်ရုံ Wi-Fi သာ)။ "Open to the factory Wi-Fi" နှိပ်ရင် K Factory သူ့ဘာသာ ပြန်စ။ ကွန်ပျူတာ လိပ်စာပြောင်းရင် QR လိုက်ပြောင်းပြီး သူဌေးကို App + Telegram နဲ့ ပြော။
 
 **New in V16.4.0:** one-week Delivery Schedule for everybody (no prices, late orders on top), the boss changes a delivery date at once – the accountant with his own password, AI Helper questions numbered by group, Settings → SMART – 80 features, readable Contact buttons in dark colours.
 **V16.4.0 အသစ်:** တစ်ပတ်စာ Delivery Schedule (လူတိုင်း မြင်၊ ဈေးမပြ၊ နောက်ကျတာ အပေါ်ဆုံး)၊ ပို့ရက် ပြောင်းခြင်း (သူဌေး ချက်ချင်း၊ Accountant ကိုယ့် Password နဲ့)၊ AI အကူ မေးခွန်း နံပါတ်+အုပ်စု၊ ဆက်တင် → SMART – အချက် ၈၀၊ ဆက်သွယ်ရန် ခလုတ် အရောင်ပြင်။
