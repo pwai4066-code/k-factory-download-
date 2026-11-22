@@ -3,12 +3,15 @@
 Stock, order and production system for small and medium CNC factory companies.
 CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်များအတွက် Stock · Order · ထုတ်လုပ်မှု စနစ်။
 
-## Latest version: V16.2.0 (22.11.2026)
+## Latest version: V16.3.0 (22.11.2026)
 
 | | File |
 |---|---|
-| Windows | [K_Factory_Setup_V16.2.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.2.0/K_Factory_Setup_V16.2.0.exe) |
-| Android | [K_Factory_V16.2.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.2.0/K_Factory_V16.2.0.apk) |
+| Windows | [K_Factory_Setup_V16.3.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.3.0/K_Factory_Setup_V16.3.0.exe) |
+| Android | [K_Factory_V16.3.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.3.0/K_Factory_V16.3.0.apk) |
+
+**New in V16.3.0:** Messages – the boss speaks or writes "K0005 …" in Telegram, checks the text in the person's language and presses Send; the person gets it in his own Telegram (his language + the boss's voice) and answers with one tap (Understood · OK · Need help · Machine problem · Will be late) or by voice. Not connected or blocked: the boss is told at once and the message is kept in the app. Only the boss and that person see the talk.
+**V16.3.0 အသစ်:** စာများ – သူဌေးက Telegram မှာ "K0005 …" လို့ အသံ (သို့) စာနဲ့ ပြော၊ သူ့ဘာသာနဲ့ စစ်ပြီး ပို့၊ ဝန်ထမ်းက ကိုယ့် Telegram မှာ ကိုယ့်ဘာသာ + သူဌေးအသံနဲ့ ရပြီး ခလုတ်တစ်ချက် (နားလည်ပါပြီ · OK · အကူအညီလို · စက်ပြဿနာ · နောက်ကျမယ်) (သို့) အသံနဲ့ ပြန်ဖြေ။ မချိတ်ရသေး / Block ထားရင် သူဌေးကို ချက်ချင်းပြော၊ App ထဲ သိမ်းထား။ သူဌေးနဲ့ အဲဒီလူပဲ မြင်ရ။
 
 **New in V16.2.0:** My Attendance shows the whole month on one page (year / month picker, today on top, colour calendar, every day newest first with hours and OT), every shift has a break (worked hours = out − in − break), time is taken in half hours (0–29 min = 0 · 30–44 = ½ h · 45–59 = 1 h), late only on the first scan of the day (1–4 min free), a QR scan is kept 5 minutes while the person logs in, Buy List with lists only (group → item → qty → day; coolant and oil in gallons; only the boss / accountant orders, like raw material).
 **V16.2.0 အသစ်:** ကျွန်ုပ်၏ အလုပ်ချိန် – တစ်လစာ တစ်မျက်နှာထဲ (နှစ်/လ ရွေး၊ ဒီနေ့ အပေါ်ဆုံး၊ အရောင် Calendar၊ နေ့စဉ် နောက်ဆုံးရက် အပေါ်ဆုံး + နာရီ + OT)၊ Shift တိုင်း နားချိန် (အလုပ်နာရီ = ထွက် − ဝင် − နားချိန်)၊ အချိန်ကို နာရီဝက်နဲ့ယူ (0–29 မိနစ် = 0 · 30–44 = နာရီဝက် · 45–59 = 1 နာရီ)၊ Late ကို ပထမ Scan နဲ့ပဲ (1–4 မိနစ် အခမဲ့)၊ Login ဝင်နေတုန်း QR Scan ကို ၅ မိနစ် သိမ်းထား၊ Buy List ကို Drop down နဲ့ပဲ (အုပ်စု → ပစ္စည်း → အရေအတွက် → ရက်၊ Coolant / ဆီ ဂါလံနဲ့၊ မှာယူတာ Boss / Accountant သာ – Raw Material လိုပဲ)။
