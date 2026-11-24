@@ -3,13 +3,15 @@
 Stock, order and production system for small and medium CNC factory companies.
 CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်များအတွက် Stock · Order · ထုတ်လုပ်မှု စနစ်။
 
-## Latest version: V16.6.0 (24.11.2026)
+## Latest version: V16.7.0 (24.11.2026)
 
 | | File |
 |---|---|
-| Windows | [K_Factory_Setup_V16.6.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.6.0/K_Factory_Setup_V16.6.0.exe) |
-| Android | [K_Factory_V16.6.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.6.0/K_Factory_V16.6.0.apk) |
+| Windows | [K_Factory_Setup_V16.7.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.7.0/K_Factory_Setup_V16.7.0.exe) |
+| Android | [K_Factory_V16.7.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.7.0/K_Factory_V16.7.0.apk) |
 
+**New in V16.7.0:** Telegram: order emails that came while no Boss was linked wait 7 days and come by themselves to the first Boss who scans the Boss link. A notice for the boss in the app when that happens. A Telegram that is already in another company can move: Telegram asks "Move?" and only that person can press it (the old company keeps it as "moved" and its bosses are told).
+**V16.7.0 အသစ်:** Boss မချိတ်ရသေးချိန် ဝင်လာတဲ့ Order email တွေ ၇ ရက် စောင့်ပြီး ပထမ Boss ဆီ အလိုလို ရောက်။ App မှာ သူဌေးကို သတိပေး။ တခြားကုမ္ပဏီမှာ ရှိပြီးသား Telegram ကို ရွှေ့လို့ရ (Telegram က "ရွှေ့မလား?" မေး၊ ကိုယ်တိုင်ပဲ နှိပ်ရ)။
 **New in V16.6.0:** Several companies on one computer: Settings → Data & Privacy (boss) "Start with a new company" (the records of now are saved as an old company, nothing deleted, K Factory starts empty) and "Open a saved company" (its boss password). Log-in screen: "Change company" like Facebook – only the password is typed. Uninstall asks once: keep the records, or save them as an old company (a new install starts empty); K Factory is closed first, no more "Folder in use". Problems in plain words with one button and "Send to Support". Settings: a Save bar when something is not saved yet. Gmail shows the real reason when reading stops.
 **V16.6.0 အသစ်:** ကွန်ပျူတာ တစ်လုံးမှာ ကုမ္ပဏီ အများ: ဆက်တင် → Data နဲ့ Privacy (သူဌေး) "ကုမ္ပဏီအသစ်နဲ့ စမယ်" (အခု မှတ်တမ်းကို ကုမ္ပဏီအဟောင်းအဖြစ် သိမ်း၊ ဘာမှ မဖျက်၊ အလွတ်နဲ့ စ) နဲ့ "သိမ်းထားတဲ့ ကုမ္ပဏီ ပြန်ဖွင့်" (အဲဒီ သူဌေး Password)။ Log-in မှာ "ကုမ္ပဏီ ပြောင်း" (Facebook လို) – Password ပဲ ရိုက်။ Uninstall လုပ်ရင် တစ်ခါမေး: ထားမလား / ကုမ္ပဏီအဟောင်းအဖြစ် သိမ်းမလား (ပြန် Install ရင် အလွတ်)၊ K Factory ကို အရင်ပိတ်လို့ "Folder in use" မဖြစ်တော့။ ပြဿနာကို ရိုးရိုးစကား + ခလုတ် + "Support ကို ပို့"။ ဆက်တင်မှာ မသိမ်းရသေးရင် Save bar။ Gmail ဖတ်လို့မရရင် တကယ့်အကြောင်းရင်း ပြ။
 **New in V16.5.0:** Attendance → QR: "📱 Can phones reach K Factory?" (boss only) – 5 checks with ✅ / ❌, the reason and the fix (open to the factory Wi-Fi, the computer's address, Windows firewall, Private / Public Wi-Fi, a real phone) and "Test with a phone". The Windows setup asks "Yes / No" once to let phones in (port 8012, factory Wi-Fi only). "Open to the factory Wi-Fi" restarts K Factory by itself. When the computer's address changes, the QR follows by itself and the boss is told in the app and in Telegram.
