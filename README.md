@@ -3,13 +3,15 @@
 Stock, order and production system for small and medium CNC factory companies.
 CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်များအတွက် Stock · Order · ထုတ်လုပ်မှု စနစ်။
 
-## Latest version: V16.5.0 (22.11.2026)
+## Latest version: V16.6.0 (24.11.2026)
 
 | | File |
 |---|---|
-| Windows | [K_Factory_Setup_V16.5.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.5.0/K_Factory_Setup_V16.5.0.exe) |
-| Android | [K_Factory_V16.5.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.5.0/K_Factory_V16.5.0.apk) |
+| Windows | [K_Factory_Setup_V16.6.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.6.0/K_Factory_Setup_V16.6.0.exe) |
+| Android | [K_Factory_V16.6.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.6.0/K_Factory_V16.6.0.apk) |
 
+**New in V16.6.0:** Several companies on one computer: Settings → Data & Privacy (boss) "Start with a new company" (the records of now are saved as an old company, nothing deleted, K Factory starts empty) and "Open a saved company" (its boss password). Log-in screen: "Change company" like Facebook – only the password is typed. Uninstall asks once: keep the records, or save them as an old company (a new install starts empty); K Factory is closed first, no more "Folder in use". Problems in plain words with one button and "Send to Support". Settings: a Save bar when something is not saved yet. Gmail shows the real reason when reading stops.
+**V16.6.0 အသစ်:** ကွန်ပျူတာ တစ်လုံးမှာ ကုမ္ပဏီ အများ: ဆက်တင် → Data နဲ့ Privacy (သူဌေး) "ကုမ္ပဏီအသစ်နဲ့ စမယ်" (အခု မှတ်တမ်းကို ကုမ္ပဏီအဟောင်းအဖြစ် သိမ်း၊ ဘာမှ မဖျက်၊ အလွတ်နဲ့ စ) နဲ့ "သိမ်းထားတဲ့ ကုမ္ပဏီ ပြန်ဖွင့်" (အဲဒီ သူဌေး Password)။ Log-in မှာ "ကုမ္ပဏီ ပြောင်း" (Facebook လို) – Password ပဲ ရိုက်။ Uninstall လုပ်ရင် တစ်ခါမေး: ထားမလား / ကုမ္ပဏီအဟောင်းအဖြစ် သိမ်းမလား (ပြန် Install ရင် အလွတ်)၊ K Factory ကို အရင်ပိတ်လို့ "Folder in use" မဖြစ်တော့။ ပြဿနာကို ရိုးရိုးစကား + ခလုတ် + "Support ကို ပို့"။ ဆက်တင်မှာ မသိမ်းရသေးရင် Save bar။ Gmail ဖတ်လို့မရရင် တကယ့်အကြောင်းရင်း ပြ။
 **New in V16.5.0:** Attendance → QR: "📱 Can phones reach K Factory?" (boss only) – 5 checks with ✅ / ❌, the reason and the fix (open to the factory Wi-Fi, the computer's address, Windows firewall, Private / Public Wi-Fi, a real phone) and "Test with a phone". The Windows setup asks "Yes / No" once to let phones in (port 8012, factory Wi-Fi only). "Open to the factory Wi-Fi" restarts K Factory by itself. When the computer's address changes, the QR follows by itself and the boss is told in the app and in Telegram.
 **V16.5.0 အသစ်:** Attendance → QR: "📱 ဖုန်းက K Factory ကို ချိတ်လို့ရလား" (သူဌေးသာ) – ✅ / ❌ ၅ ချက်၊ အကြောင်းရင်းနဲ့ ပြင်နည်း (စက်ရုံ Wi-Fi ဖွင့်ထား၊ ကွန်ပျူတာ လိပ်စာ၊ Windows Firewall၊ Private / Public Wi-Fi၊ ဖုန်းအစစ်) နဲ့ "ဖုန်းနဲ့ စမ်းမည်"။ Windows Setup က ဖုန်းဝင်ခွင့်အတွက် "Yes / No" တစ်ခါ မေး (Port 8012၊ စက်ရုံ Wi-Fi သာ)။ "Open to the factory Wi-Fi" နှိပ်ရင် K Factory သူ့ဘာသာ ပြန်စ။ ကွန်ပျူတာ လိပ်စာပြောင်းရင် QR လိုက်ပြောင်းပြီး သူဌေးကို App + Telegram နဲ့ ပြော။
 
