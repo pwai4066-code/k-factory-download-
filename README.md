@@ -3,13 +3,15 @@
 Stock, order and production system for small and medium CNC factory companies.
 CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်များအတွက် Stock · Order · ထုတ်လုပ်မှု စနစ်။
 
-## Latest version: V16.9.0 (25.11.2026)
+## Latest version: V17.0.1 (26.11.2026)
 
 | | File |
 |---|---|
-| Windows | [K_Factory_Setup_V16.9.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.9.0/K_Factory_Setup_V16.9.0.exe) |
-| Android | [K_Factory_V16.9.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.9.0/K_Factory_V16.9.0.apk) |
+| Windows | [K_Factory_Setup_V17.0.1.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.0.1/K_Factory_Setup_V17.0.1.exe) |
+| Android | [K_Factory_V17.0.1.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.0.1/K_Factory_V17.0.1.apk) |
 
+**New in V17.0.1:** Round profile photo (passport style) for every person: take or choose a photo and fit it into the circle. A photo the person adds himself shows after the boss / HR pressed ✅. Only the person, the boss and HR see it; photos stay on the K Factory computer and old photos are kept.
+**V17.0.1 အသစ်:** ဝန်ထမ်းတိုင်းအတွက် အဝိုင်း Profile ဓာတ်ပုံ (Passport ပုံစံ): ဓာတ်ပုံ ရိုက်/ရွေးပြီး အဝိုင်းထဲ ထည့်။ ကိုယ်တိုင်ထည့်ရင် သူဌေး/HR ✅ မှ ပြ။ ကိုယ်တိုင်၊ သူဌေးနဲ့ HR ပဲ မြင်ရ၊ K Factory ကွန်ပျူတာထဲမှာပဲ သိမ်း၊ ပုံအဟောင်း မဖျက်။
 **New in V16.9.0:** Fair work time: OT is only the time after the end of the shift and above the normal hours; somebody who came late first makes up his normal hours (the late stays in the record, money is cut only when the hours were not reached). OT is paid after the boss or HR approved it (Attendance → OT approval). Two scans within 10 minutes = pressed twice. The break comes from the scans (1 hour minimum, long break warning). Half a day. Closed months never change.
 **V16.9.0 အသစ်:** တရားမျှတတဲ့ အလုပ်ချိန်: OT = Shift ပြီးနောက်၊ ပုံမှန်နာရီ ကျော်တာပဲ။ နောက်ကျတဲ့သူ ပုံမှန်နာရီ အရင်ဖြည့် (နောက်ကျ မှတ်တမ်းကျန်၊ နာရီမပြည့်မှ ငွေဖြတ်)။ OT ကို သူဌေး/HR ခွင့်ပြုမှ ပေး။ ၁၀ မိနစ်အတွင်း Scan ၂ ခါ = မှားနှိပ်။ နားချိန် Scan အလိုက် (အနည်းဆုံး ၁ နာရီ၊ ပိုနားရင် သတိပေး)။ နေ့တစ်ဝက်။ ပိတ်ပြီးသား လ မပြောင်း။
 **New in V16.8.0:** Late time of 60 minutes and more is shown as hours and minutes (e.g. 1 h 1 min) everywhere. Late totals for this week (Monday – Sunday), this month and this year: each person sees his own in My Attendance; the boss and HR see everybody in Attendance → Late totals.
