@@ -1,0 +1,2 @@
+4c0c4a9d969c6b930f9447e90be6618105766f236b1ae8a1c12e37b85b15e19d  K_Factory_Setup_V16.8.0.exe
+cd96d0993fe08d77c3ebc2ab725ef63bdd5c0e29719f3b9fd5fce1fbee8ca200  K_Factory_V16.8.0.apk
