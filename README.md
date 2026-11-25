@@ -3,13 +3,15 @@
 Stock, order and production system for small and medium CNC factory companies.
 CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်များအတွက် Stock · Order · ထုတ်လုပ်မှု စနစ်။
 
-## Latest version: V16.8.0 (25.11.2026)
+## Latest version: V16.9.0 (25.11.2026)
 
 | | File |
 |---|---|
-| Windows | [K_Factory_Setup_V16.8.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.8.0/K_Factory_Setup_V16.8.0.exe) |
-| Android | [K_Factory_V16.8.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.8.0/K_Factory_V16.8.0.apk) |
+| Windows | [K_Factory_Setup_V16.9.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.9.0/K_Factory_Setup_V16.9.0.exe) |
+| Android | [K_Factory_V16.9.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V16.9.0/K_Factory_V16.9.0.apk) |
 
+**New in V16.9.0:** Fair work time: OT is only the time after the end of the shift and above the normal hours; somebody who came late first makes up his normal hours (the late stays in the record, money is cut only when the hours were not reached). OT is paid after the boss or HR approved it (Attendance → OT approval). Two scans within 10 minutes = pressed twice. The break comes from the scans (1 hour minimum, long break warning). Half a day. Closed months never change.
+**V16.9.0 အသစ်:** တရားမျှတတဲ့ အလုပ်ချိန်: OT = Shift ပြီးနောက်၊ ပုံမှန်နာရီ ကျော်တာပဲ။ နောက်ကျတဲ့သူ ပုံမှန်နာရီ အရင်ဖြည့် (နောက်ကျ မှတ်တမ်းကျန်၊ နာရီမပြည့်မှ ငွေဖြတ်)။ OT ကို သူဌေး/HR ခွင့်ပြုမှ ပေး။ ၁၀ မိနစ်အတွင်း Scan ၂ ခါ = မှားနှိပ်။ နားချိန် Scan အလိုက် (အနည်းဆုံး ၁ နာရီ၊ ပိုနားရင် သတိပေး)။ နေ့တစ်ဝက်။ ပိတ်ပြီးသား လ မပြောင်း။
 **New in V16.8.0:** Late time of 60 minutes and more is shown as hours and minutes (e.g. 1 h 1 min) everywhere. Late totals for this week (Monday – Sunday), this month and this year: each person sees his own in My Attendance; the boss and HR see everybody in Attendance → Late totals.
 **V16.8.0 အသစ်:** နောက်ကျချိန် ၆၀ မိနစ်နဲ့ အထက်ကို နာရီ + မိနစ် (ဥပမာ 1 နာရီ 1 မိနစ်) နဲ့ ပြ။ ဒီအပတ် (တနင်္လာ – တနင်္ဂနွေ)၊ ဒီလ၊ ဒီနှစ် နောက်ကျမှု စုစုပေါင်း: ကိုယ့်ဟာ ကိုယ့် Attendance မှာ၊ သူဌေးနဲ့ HR က လူတိုင်းကို Attendance → နောက်ကျမှု စုစုပေါင်း မှာ။
 **New in V16.7.0:** Telegram: order emails that came while no Boss was linked wait 7 days and come by themselves to the first Boss who scans the Boss link. A notice for the boss in the app when that happens. A Telegram that is already in another company can move: Telegram asks "Move?" and only that person can press it (the old company keeps it as "moved" and its bosses are told).
