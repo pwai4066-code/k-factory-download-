@@ -3,13 +3,15 @@
 Stock, order and production system for small and medium CNC factory companies.
 CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်များအတွက် Stock · Order · ထုတ်လုပ်မှု စနစ်။
 
-## Latest version: V17.2.0 (26.11.2026)
+## Latest version: V17.3.0 (26.11.2026)
 
 | | File |
 |---|---|
-| Windows | [K_Factory_Setup_V17.2.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.2.0/K_Factory_Setup_V17.2.0.exe) |
-| Android | [K_Factory_V17.2.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.2.0/K_Factory_V17.2.0.apk) |
+| Windows | [K_Factory_Setup_V17.3.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.3.0/K_Factory_Setup_V17.3.0.exe) |
+| Android | [K_Factory_V17.3.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.3.0/K_Factory_V17.3.0.apk) |
 
+**New in V17.3.0:** Telegram: the boss's AI secretary – ask anything in your own words; answers come only from your K Factory data (never made up), 💡 advice sometimes, an honest "I cannot answer yet" with "📨 Ask Ko Ko to add". The first 2 weeks it teaches (🎓 tips + next-question buttons); the boss can teach it ("remember: …"). How to use has a new topic.
+**V17.3.0 အသစ်:** Telegram: သူဌေးရဲ့ AI အတွင်းရေးမှူး – ကိုယ့်စကားနဲ့ ဘာမဆို မေး၊ ကိုယ့် K Factory အချက်အလက်နဲ့ပဲ ဖြေ (မမှန်း)၊ တခါတရံ 💡 အကြံ၊ မသိရင် ဝန်ခံပြီး "📨 Ko Ko ကို ထည့်ခိုင်း"။ ပထမ ၂ ပတ် သင်ပေး (🎓 + နောက်မေးခွန်း ခလုတ်)၊ သူဌေးက ပြန်သင်လို့ရ ("မှတ်ထား: …")။ သုံးနည်းမှာ ခေါင်းစဉ်အသစ်။
 **New in V17.2.0:** Telegram (K Factory Cloud bot): ask for a drawing / STP / PO, send a photo of tools to add stock, ask about stock, move lockers, and (boss) cancel his own order, write to one person or give a notice – always with ✅ first. How to use has a new topic for it.
 **V17.2.0 အသစ်:** Telegram (K Factory Cloud bot) မှာ: Drawing / STP / PO တောင်း၊ Tool ဓာတ်ပုံ ပို့ပြီး Stock ထည့်၊ Stock မေး၊ Locker ရွှေ့၊ (သူဌေး) ကိုယ့် Order Cancel၊ တစ်ယောက်ဆီ စာ၊ Notice – အမြဲ ✅ နှိပ်ပြီးမှ။ သုံးနည်းမှာ ခေါင်းစဉ်အသစ် ပါပါတယ်။
 **New in V17.1.0:** OT is counted at once: the hours over the normal hours of the day (the break is taken off) – nobody has to approve it. Late rules are all the boss's choice: free minutes, rounding, free late times a month, 3 steps, per minute or the same amount each time, half a day, no cut when the normal hours were worked. Who did not come: a list once for the day shift and once for the night shift to the boss's Telegram and the dashboard (on / off for each). About shows only the last 2 versions; How to use updated.
