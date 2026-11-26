@@ -3,13 +3,15 @@
 Stock, order and production system for small and medium CNC factory companies.
 CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်များအတွက် Stock · Order · ထုတ်လုပ်မှု စနစ်။
 
-## Latest version: V17.0.1 (26.11.2026)
+## Latest version: V17.1.0 (26.11.2026)
 
 | | File |
 |---|---|
-| Windows | [K_Factory_Setup_V17.0.1.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.0.1/K_Factory_Setup_V17.0.1.exe) |
-| Android | [K_Factory_V17.0.1.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.0.1/K_Factory_V17.0.1.apk) |
+| Windows | [K_Factory_Setup_V17.1.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.1.0/K_Factory_Setup_V17.1.0.exe) |
+| Android | [K_Factory_V17.1.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.1.0/K_Factory_V17.1.0.apk) |
 
+**New in V17.1.0:** OT is counted at once: the hours over the normal hours of the day (the break is taken off) – nobody has to approve it. Late rules are all the boss's choice: free minutes, rounding, free late times a month, 3 steps, per minute or the same amount each time, half a day, no cut when the normal hours were worked. Who did not come: a list once for the day shift and once for the night shift to the boss's Telegram and the dashboard (on / off for each). About shows only the last 2 versions; How to use updated.
+**V17.1.0 အသစ်:** OT ကို ချက်ချင်း တွက်ပါတယ်: တစ်ရက်ရဲ့ ပုံမှန်နာရီ ကျော်တဲ့ နာရီ (နားချိန် နုတ်ပြီး) – ဘယ်သူ့ ခွင့်ပြုချက်မှ မလိုပါ။ နောက်ကျ စည်းမျဉ်း အားလုံး သူဌေး စိတ်ကြိုက်: အခမဲ့ မိနစ်၊ မိနစ်ပိုင်းပုံ၊ တစ်လ အခမဲ့ အကြိမ်၊ အဆင့် ၃ ဆင့်၊ မိနစ်လိုက် သို့မဟုတ် တစ်ခါ ပုံသေ၊ နေ့တစ်ဝက်၊ ပုံမှန်နာရီ ပြည့်ရင် မဖြတ်။ မလာသူ စာရင်း: နေ့ဆိုင်း တစ်ကြိမ်၊ ညဆိုင်း တစ်ကြိမ် သူဌေး Telegram နဲ့ Dashboard ကို (တစ်ခုချင်း ပို့/မပို့)။ About မှာ နောက်ဆုံး Version ၂ ခုပဲ ပြ၊ သုံးနည်း အသစ်။
 **New in V17.0.1:** Round profile photo (passport style) for every person: take or choose a photo and fit it into the circle. A photo the person adds himself shows after the boss / HR pressed ✅. Only the person, the boss and HR see it; photos stay on the K Factory computer and old photos are kept.
 **V17.0.1 အသစ်:** ဝန်ထမ်းတိုင်းအတွက် အဝိုင်း Profile ဓာတ်ပုံ (Passport ပုံစံ): ဓာတ်ပုံ ရိုက်/ရွေးပြီး အဝိုင်းထဲ ထည့်။ ကိုယ်တိုင်ထည့်ရင် သူဌေး/HR ✅ မှ ပြ။ ကိုယ်တိုင်၊ သူဌေးနဲ့ HR ပဲ မြင်ရ၊ K Factory ကွန်ပျူတာထဲမှာပဲ သိမ်း၊ ပုံအဟောင်း မဖျက်။
 **New in V16.9.0:** Fair work time: OT is only the time after the end of the shift and above the normal hours; somebody who came late first makes up his normal hours (the late stays in the record, money is cut only when the hours were not reached). OT is paid after the boss or HR approved it (Attendance → OT approval). Two scans within 10 minutes = pressed twice. The break comes from the scans (1 hour minimum, long break warning). Half a day. Closed months never change.
