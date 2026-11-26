@@ -3,13 +3,15 @@
 Stock, order and production system for small and medium CNC factory companies.
 CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်များအတွက် Stock · Order · ထုတ်လုပ်မှု စနစ်။
 
-## Latest version: V17.1.0 (26.11.2026)
+## Latest version: V17.2.0 (26.11.2026)
 
 | | File |
 |---|---|
-| Windows | [K_Factory_Setup_V17.1.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.1.0/K_Factory_Setup_V17.1.0.exe) |
-| Android | [K_Factory_V17.1.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.1.0/K_Factory_V17.1.0.apk) |
+| Windows | [K_Factory_Setup_V17.2.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.2.0/K_Factory_Setup_V17.2.0.exe) |
+| Android | [K_Factory_V17.2.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.2.0/K_Factory_V17.2.0.apk) |
 
+**New in V17.2.0:** Telegram (K Factory Cloud bot): ask for a drawing / STP / PO, send a photo of tools to add stock, ask about stock, move lockers, and (boss) cancel his own order, write to one person or give a notice – always with ✅ first. How to use has a new topic for it.
+**V17.2.0 အသစ်:** Telegram (K Factory Cloud bot) မှာ: Drawing / STP / PO တောင်း၊ Tool ဓာတ်ပုံ ပို့ပြီး Stock ထည့်၊ Stock မေး၊ Locker ရွှေ့၊ (သူဌေး) ကိုယ့် Order Cancel၊ တစ်ယောက်ဆီ စာ၊ Notice – အမြဲ ✅ နှိပ်ပြီးမှ။ သုံးနည်းမှာ ခေါင်းစဉ်အသစ် ပါပါတယ်။
 **New in V17.1.0:** OT is counted at once: the hours over the normal hours of the day (the break is taken off) – nobody has to approve it. Late rules are all the boss's choice: free minutes, rounding, free late times a month, 3 steps, per minute or the same amount each time, half a day, no cut when the normal hours were worked. Who did not come: a list once for the day shift and once for the night shift to the boss's Telegram and the dashboard (on / off for each). About shows only the last 2 versions; How to use updated.
 **V17.1.0 အသစ်:** OT ကို ချက်ချင်း တွက်ပါတယ်: တစ်ရက်ရဲ့ ပုံမှန်နာရီ ကျော်တဲ့ နာရီ (နားချိန် နုတ်ပြီး) – ဘယ်သူ့ ခွင့်ပြုချက်မှ မလိုပါ။ နောက်ကျ စည်းမျဉ်း အားလုံး သူဌေး စိတ်ကြိုက်: အခမဲ့ မိနစ်၊ မိနစ်ပိုင်းပုံ၊ တစ်လ အခမဲ့ အကြိမ်၊ အဆင့် ၃ ဆင့်၊ မိနစ်လိုက် သို့မဟုတ် တစ်ခါ ပုံသေ၊ နေ့တစ်ဝက်၊ ပုံမှန်နာရီ ပြည့်ရင် မဖြတ်။ မလာသူ စာရင်း: နေ့ဆိုင်း တစ်ကြိမ်၊ ညဆိုင်း တစ်ကြိမ် သူဌေး Telegram နဲ့ Dashboard ကို (တစ်ခုချင်း ပို့/မပို့)။ About မှာ နောက်ဆုံး Version ၂ ခုပဲ ပြ၊ သုံးနည်း အသစ်။
 **New in V17.0.1:** Round profile photo (passport style) for every person: take or choose a photo and fit it into the circle. A photo the person adds himself shows after the boss / HR pressed ✅. Only the person, the boss and HR see it; photos stay on the K Factory computer and old photos are kept.
