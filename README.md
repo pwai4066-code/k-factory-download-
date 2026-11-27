@@ -3,13 +3,15 @@
 Stock, order and production system for small and medium CNC factory companies.
 CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်များအတွက် Stock · Order · ထုတ်လုပ်မှု စနစ်။
 
-## Latest version: V17.3.0 (26.11.2026)
+## Latest version: V17.3.1 (27.11.2026)
 
 | | File |
 |---|---|
-| Windows | [K_Factory_Setup_V17.3.0.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.3.0/K_Factory_Setup_V17.3.0.exe) |
-| Android | [K_Factory_V17.3.0.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.3.0/K_Factory_V17.3.0.apk) |
+| Windows | [K_Factory_Setup_V17.3.1.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.3.1/K_Factory_Setup_V17.3.1.exe) |
+| Android | [K_Factory_V17.3.1.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.3.1/K_Factory_V17.3.1.apk) |
 
+**New in V17.3.1:** Telegram: the boss can ask by voice (up to 2 minutes) – it writes what it heard, then answers in writing and also by voice. Voice is for the boss only; staff are asked to write. The boss has no daily AI limit for writing, photos and voice. How to use updated.
+**V17.3.1 အသစ်:** Telegram: သူဌေးက အသံနဲ့ မေးလို့ရပြီ (၂ မိနစ်အထိ) – ကြားတာကို ရေးပြပြီး စာနဲ့ရော အသံနဲ့ပါ ပြန်ဖြေ။ အသံက သူဌေးအတွက်ပဲ၊ ဝန်ထမ်းကို စာနဲ့ ရေးခိုင်း။ သူဌေးအတွက် စာ၊ ဓာတ်ပုံ၊ အသံ AI တစ်ရက် အကန့်အသတ် မရှိ။ သုံးနည်း အသစ်။
 **New in V17.3.0:** Telegram: the boss's AI secretary – ask anything in your own words; answers come only from your K Factory data (never made up), 💡 advice sometimes, an honest "I cannot answer yet" with "📨 Ask Ko Ko to add". The first 2 weeks it teaches (🎓 tips + next-question buttons); the boss can teach it ("remember: …"). How to use has a new topic.
 **V17.3.0 အသစ်:** Telegram: သူဌေးရဲ့ AI အတွင်းရေးမှူး – ကိုယ့်စကားနဲ့ ဘာမဆို မေး၊ ကိုယ့် K Factory အချက်အလက်နဲ့ပဲ ဖြေ (မမှန်း)၊ တခါတရံ 💡 အကြံ၊ မသိရင် ဝန်ခံပြီး "📨 Ko Ko ကို ထည့်ခိုင်း"။ ပထမ ၂ ပတ် သင်ပေး (🎓 + နောက်မေးခွန်း ခလုတ်)၊ သူဌေးက ပြန်သင်လို့ရ ("မှတ်ထား: …")။ သုံးနည်းမှာ ခေါင်းစဉ်အသစ်။
 **New in V17.2.0:** Telegram (K Factory Cloud bot): ask for a drawing / STP / PO, send a photo of tools to add stock, ask about stock, move lockers, and (boss) cancel his own order, write to one person or give a notice – always with ✅ first. How to use has a new topic for it.
