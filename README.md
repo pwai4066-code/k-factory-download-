@@ -3,13 +3,15 @@
 Stock, order and production system for small and medium CNC factory companies.
 CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်များအတွက် Stock · Order · ထုတ်လုပ်မှု စနစ်။
 
-## Latest version: V17.3.1 (27.11.2026)
+## Latest version: V17.3.2 (27.11.2026)
 
 | | File |
 |---|---|
-| Windows | [K_Factory_Setup_V17.3.1.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.3.1/K_Factory_Setup_V17.3.1.exe) |
-| Android | [K_Factory_V17.3.1.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.3.1/K_Factory_V17.3.1.apk) |
+| Windows | [K_Factory_Setup_V17.3.2.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.3.2/K_Factory_Setup_V17.3.2.exe) |
+| Android | [K_Factory_V17.3.2.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.3.2/K_Factory_V17.3.2.apk) |
 
+**New in V17.3.2:** Pay: somebody who started or left in the middle of a month is paid by day (monthly pay ÷ 26 × the days paid, fixed allowances too); People has a new "Last work day". The payslip no longer shows how it is worked out, the pay type and basic pay, the group or the employer contributions – each can be turned on again in Payroll setup. Telegram voice: the boss gets the answer by voice.
+**V17.3.2 အသစ်:** လစာ: လလယ်မှာ စဝင် (သို့) ထွက်တဲ့သူကို ရက်အလိုက် ပေး (လစဉ်လစာ ÷ 26 × ပေးရမယ့်ရက်၊ ပုံသေ ထောက်ပံ့ကြေးလည်း)၊ ဝန်ထမ်းမှာ "နောက်ဆုံး အလုပ်ရက်" အသစ်။ Payslip မှာ တွက်နည်း၊ လစာအမျိုးအစားနဲ့ အခြေခံလစာ၊ အုပ်စု၊ သူဌေး ပေးကြေး မပြတော့ (လစာ Setup မှာ ပြန်ဖွင့်လို့ရ)။ Telegram အသံ: သူဌေးကို အသံနဲ့ ပြန်ဖြေ။
 **New in V17.3.1:** Telegram: the boss can ask by voice (up to 2 minutes) – it writes what it heard, then answers in writing and also by voice. Voice is for the boss only; staff are asked to write. The boss has no daily AI limit for writing, photos and voice. How to use updated.
 **V17.3.1 အသစ်:** Telegram: သူဌေးက အသံနဲ့ မေးလို့ရပြီ (၂ မိနစ်အထိ) – ကြားတာကို ရေးပြပြီး စာနဲ့ရော အသံနဲ့ပါ ပြန်ဖြေ။ အသံက သူဌေးအတွက်ပဲ၊ ဝန်ထမ်းကို စာနဲ့ ရေးခိုင်း။ သူဌေးအတွက် စာ၊ ဓာတ်ပုံ၊ အသံ AI တစ်ရက် အကန့်အသတ် မရှိ။ သုံးနည်း အသစ်။
 **New in V17.3.0:** Telegram: the boss's AI secretary – ask anything in your own words; answers come only from your K Factory data (never made up), 💡 advice sometimes, an honest "I cannot answer yet" with "📨 Ask Ko Ko to add". The first 2 weeks it teaches (🎓 tips + next-question buttons); the boss can teach it ("remember: …"). How to use has a new topic.
