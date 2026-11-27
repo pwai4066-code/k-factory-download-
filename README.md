@@ -3,13 +3,15 @@
 Stock, order and production system for small and medium CNC factory companies.
 CNC စက်ရုံ ကုမ္ပဏီ အသေး/အလတ်များအတွက် Stock · Order · ထုတ်လုပ်မှု စနစ်။
 
-## Latest version: V17.3.3 (27.11.2026)
+## Latest version: V17.3.4 (27.11.2026)
 
 | | File |
 |---|---|
-| Windows | [K_Factory_Setup_V17.3.3.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.3.3/K_Factory_Setup_V17.3.3.exe) |
-| Android | [K_Factory_V17.3.3.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.3.3/K_Factory_V17.3.3.apk) |
+| Windows | [K_Factory_Setup_V17.3.4.exe](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.3.4/K_Factory_Setup_V17.3.4.exe) |
+| Android | [K_Factory_V17.3.4.apk](https://github.com/pwai4066-code/k-factory-download-/raw/main/V17.3.4/K_Factory_V17.3.4.apk) |
 
+**New in V17.3.4:** Payroll: after the cut for absent days, a worker on monthly pay always gets at least the days he came × one day (a month with 27 work days, came 1 day: 153.85, not 0), never more than the monthly pay. The payroll status now says "Not closed yet".
+**V17.3.4 အသစ်:** လစာ: ပျက်ရက် ဖြတ်ပြီးနောက် လစဉ်လစာသမားက လာတဲ့ရက် × တစ်ရက်လစာ ကို အနည်းဆုံး ရ (27 ရက်ရှိတဲ့လ 1 ရက်ပဲလာရင် 0 မဟုတ်ဘဲ 153.85)၊ လစဉ်လစာထက် မကျော်။ လစာ အခြေအနေကို "မပိတ်ရသေး" လို့ ပြ။
 **New in V17.3.3:** Payroll: closing the wrong month is stopped – a month not over yet is closed only after a clear yes, a month that has not started cannot be closed. While last month is not closed, the boss and HR see a reminder every day; the first 7 days the payroll opens on last month. The cut for absent days is never more than the basic pay.
 **V17.3.3 အသစ်:** လစာ: လမှား ပိတ်တာ တားထား – မကုန်သေးတဲ့လကို သေချာ "ပိတ်မယ်" ပြောမှ ပိတ်၊ မစသေးတဲ့လ ပိတ်လို့မရ။ ပြီးခဲ့တဲ့လ မပိတ်မချင်း သူဌေးနဲ့ HR ကို နေ့တိုင်း သတိပေး၊ လဆန်း ၇ ရက်အတွင်း ပြီးခဲ့တဲ့လနဲ့ ပွင့်။ ပျက်ရက် ဖြတ်ငွေက အခြေခံလစာထက် ဘယ်တော့မှ မကျော်။
 **New in V17.3.2:** Pay: somebody who started or left in the middle of a month is paid by day (monthly pay ÷ 26 × the days paid, fixed allowances too); People has a new "Last work day". The payslip no longer shows how it is worked out, the pay type and basic pay, the group or the employer contributions – each can be turned on again in Payroll setup. Telegram voice: the boss gets the answer by voice.
