@@ -1,0 +1,2 @@
+1faa8fe0781066ab6e115fafbcbef98b44055f15273f26fc51d01a19fec0109f  K_Factory_Setup_V17.3.3.exe
+9e281909a9cf4a109b12e181c1b4b6a749af4782c3bb12d8ad5781dc90d5bb37  K_Factory_V17.3.3.apk
